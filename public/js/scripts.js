@@ -70,11 +70,11 @@
             mouseDrag: touchSlide,
             touchDrag: touchSlide,
             dots: true,
-            nav: true,
+            // nav: true,
             loop: loopSlides,
             autoHeight : true,
-            navText: ["<img src='img/assets/slider-left-thin-arrow.png'>", "<img src='img/assets/slider-right-thin-arrow.png'>"],
-            navRewind: true,
+            // navText: ["<img src='img/assets/slider-left-thin-arrow.png'>", "<img src='img/assets/slider-right-thin-arrow.png'>"],
+            // navRewind: true,
             slideBy : 'page'
         });
     }
