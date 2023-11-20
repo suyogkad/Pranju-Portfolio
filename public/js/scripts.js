@@ -155,9 +155,9 @@
         var quoteOwl = $('.quote-slider');
         quoteOwl.owlCarousel({
             autoplay: true,
-            autoplayTimeout: 6000,
+            autoplayTimeout: 8000,
             items: 1,
-            dots: false,
+            dots: true,
             loop: true,
             nav: false,
             // navText: ["<img src='img/assets/icons8-chevron-left-30.png'>", "<img src='./img/assets/icons8-chevron-right-30.png'>"]
