@@ -154,13 +154,13 @@
     function quoteSlider() {
         var quoteOwl = $('.quote-slider');
         quoteOwl.owlCarousel({
-            autoplay: false,
-            autoplayTimeout: 3000,
+            autoplay: true,
+            autoplayTimeout: 6000,
             items: 1,
             dots: false,
             loop: true,
-            nav: true,
-            navText: ["<img src='img/assets/slider-left-thin-arrow.png'>", "<img src='img/assets/slider-right-thin-arrow.png'>"]
+            nav: false,
+            // navText: ["<img src='img/assets/icons8-chevron-left-30.png'>", "<img src='./img/assets/icons8-chevron-right-30.png'>"]
         });
     }
 
@@ -434,7 +434,7 @@
         clientSlider.owlCarousel({
             autoplay : autoplay,
             autoplayTimeout: autoplaySpeed,
-            loop: false,
+            loop: true,
             dots: false,
             nav: false,
             responsiveRefreshRate: 200,
