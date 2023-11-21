@@ -269,6 +269,7 @@
         });
 
 
+        // grid size adjustments
         var worksgrid = $('#works-grid'),
             filters = $('.portfolio-filters');
 
