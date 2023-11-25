@@ -131,12 +131,14 @@
         });
     }
 
+    // teamscontrols
     function teamSlider() {
         $(".team-slider").owlCarousel({
             autoplay : false,
             items: 3,
             dots: true,
-            responsiveRefreshRate: 200,
+            loop: false,
+            responsiveRefreshRate: 100,
             responsive: {
                 0: {
                     items: 1
