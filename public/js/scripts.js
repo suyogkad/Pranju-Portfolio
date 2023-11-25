@@ -134,10 +134,10 @@
     // teamscontrols
     function teamSlider() {
         $(".team-slider").owlCarousel({
-            autoplay : false,
+            autoplay : true,
             items: 3,
             dots: true,
-            loop: false,
+            loop: true,
             responsiveRefreshRate: 100,
             responsive: {
                 0: {
