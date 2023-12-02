@@ -16,16 +16,16 @@
                 dots: false,
                 mouseDrag: false,
                 touchDrag: false,
-                loop: true
+                loop: false
             });
         } else {
             heroContSlider.owlCarousel({
                 autoplay: false,
                 items: 1,
                 dots: false,
-                mouseDrag: true,
-                touchDrag: true,
-                loop: true,
+                mouseDrag: false,
+                touchDrag: false,
+                loop: false,
                 autoHeight: true
             });
         }
