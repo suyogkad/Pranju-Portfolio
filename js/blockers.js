@@ -1,7 +1,5 @@
 // blockers.js
 
-// ✅ Allow right-click, F12, Cmd+Opt+I (no blocks here)
-
 // 🚫 Block basic scrapers based on User-Agent
 if (
   /wget|httrack|curl|python|libwww|scrapy|httpclient|bot|spider/i.test(
