@@ -779,3 +779,15 @@
     });
 
 }(jQuery));
+
+// $('.testimonial-slider').owlCarousel({
+//     items: 2,
+//     margin: 30,
+//     autoplay: true,
+//     autoplayTimeout: 5000,
+//     responsive:{
+//         0:{ items:1 },
+//         768:{ items:1 },
+//         1200:{ items:2 }
+//     }
+// });

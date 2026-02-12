@@ -439,66 +439,243 @@
 
             
         </section>
-        <!-- End Fun Facts -->
 
-        <!-- Quotes -->
-        <section id="quotes" class="parallax pt100 pb90" data-overlay-dark="8">
-            <div class="background-image">
-                <img src="img/backgrounds/bg-4.jpg" alt="#">
-            </div>
-            <div class="container">
-                <div class="row">
+        <!-- ================= Testimonials Section ================= -->
+<section id="testimonials" class="testimonials-section">
 
-                    <div class="col-md-12">
-                        <div class="quote-slider navigation-thin container white text-center" data-autoplay="true" data-speed="2000">
-                            <div>
-                                <h2>
-                                    <i class="vossen-quote color"></i>
-                                        Every journey begins with a single step, but you'll never finish if you don't start. <strong>Embrace the unknown and let your curiosity lead.</strong>
-                                    <i class="vossen-quote color"></i>
-                                </h2>
-                                <p class="label label-primary">Life's Adventure</p>
-                            </div>
-                            <div>
-                                <h2>
-                                    <i class="vossen-quote color"></i>
-                                        In the symphony of life, <strong>each moment is a note</strong> worth savoring. The music is not in the destination, but in the journey.
-                                    <i class="vossen-quote color"></i>
-                                </h2>
-                                <p class="label label-primary">Melody of Moments</p>
-                            </div>
-                            <div>
-                                <h2>
-                                    <i class="vossen-quote color"></i>
-                                        The art of life lies in a constant readjustment to our surroundings. <strong>Adaptability and resilience</strong> are keys to a vibrant life.
-                                    <i class="vossen-quote color"></i>
-                                </h2>
-                                <p class="label label-primary">Art of Living</p>
-                            </div>
-                            <div>
-                                <h2>
-                                    <i class="vossen-quote color"></i>
-                                        The strength of the human spirit is in its ability to face the unknown with <strong>optimism and determination</strong>. Embrace each day as a new opportunity.
-                                    <i class="vossen-quote color"></i>
-                                </h2>
-                                <p class="label label-primary">Spirit of Resilience</p>
-                            </div>
-                            <div>
-                                <h2>
-                                    <i class="vossen-quote color"></i>
-                                        True wisdom lies in the joy of discovery and the pursuit of the unexplored. <strong>Seek knowledge, embrace change</strong>, and grow every day.
-                                    <i class="vossen-quote color"></i>
-                                </h2>
-                                <p class="label label-primary">Joy of Discovery</p>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
+<style>
+/* ===== Testimonials Styling ===== */
+
+.testimonials-section{
+    position: relative;
+    padding:120px 0;
+    background:url('img/backgrounds/bg-4.jpg') center center/cover no-repeat;
+    background-attachment: fixed; /* ⭐ parallax */
+    color:#fff;
+}
+
+.testimonials-section::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+}
+
+.testimonials-section .container{
+    position:relative;
+    z-index:2;
+}
+
+/* Card */
+
+.testimonial-card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter: blur(8px);
+    border-radius:14px;
+    padding:35px;
+    margin:15px;
+    transition:0.4s;
+    height:100%;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.08);
+}
+
+/* Avatar */
+
+.testimonial-avatar{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:0 auto 20px auto; /* centers horizontally */
+    border:3px solid rgba(255,255,255,0.2);
+}
+
+
+.testimonial-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Text */
+
+.testimonial-text{
+    font-size:15.5px;
+    line-height:1.7;
+    opacity:.9;
+    margin-bottom:25px;
+}
+
+.testimonial-author{
+    font-weight:700;
+    font-size:18px;
+}
+
+.testimonial-role{
+    font-size:14px;
+    opacity:.7;
+}
+
+/* Owl Dots */
+
+.owl-dots{
+    margin-top:35px;
+    text-align:center;
+}
+
+.owl-dot span{
+    width:10px;
+    height:10px;
+    background:#999 !important;
+}
+
+.owl-dot.active span{
+    background:#4c6fff !important;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .testimonial-card{
+        padding:25px;
+    }
+
+    .testimonials-section{
+        background-attachment: scroll;
+    }
+}
+</style>
+
+
+<div class="container">
+
+    <!-- ⭐ Heading copied from Achievements style -->
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2 style="color: white;"><strong>What People Say</strong><span  style="color: #4c51e0;"> About Me</span></h2>
+            <p class="lead" style="color: rgba(255, 255, 255, 0.678);">
+                Feedbacks from colleagues and collaborators
+            </p>
+        </div>
+    </div>
+
+
+    <!-- ⭐ Slider -->
+    <div class="quote-slider owl-carousel navigation-thin container white text-center">
+
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+
+            <div class="testimonial-avatar">
+                <img src="img/testimonials/avatar.png" alt="">
             </div>
-        </section>
-        <!-- End Quotes -->           
+
+            <div class="testimonial-text">
+                I had the pleasure of supervising Pranju during her time as a Content Creator at Asterdio for over a year. She consistently demonstrated strong communication skills and handled client communication with confidence and professionalism.
+
+                Pranju played a key role across social media management, video creation, scripting, voiceovers, competitor analysis, and reporting, showing deep understanding of end-to-end content creation.
+            </div>
+
+            <div class="testimonial-author">Mahima Hada</div>
+            <div class="testimonial-role">VP Sales, Supervisor Marketing</div>
+
+        </div>
+
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+
+            <div class="testimonial-avatar">
+                <img src="img/testimonials/avatar.png" alt="">
+            </div>
+
+            <div class="testimonial-text">
+                Working with Pranju was awesome. She understands technical production, helps with lighting and setup, then confidently presents on camera. Her writing is simple, funny, and always effective.
+
+                Her positive energy improves every shoot.
+            </div>
+
+            <div class="testimonial-author">Yudhir</div>
+            <div class="testimonial-role">Cinematographer & Photographer, Asterdio Inc.</div>
+
+        </div>
+
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+
+            <div class="testimonial-avatar">
+                <img src="img/testimonials/avatar.png" alt="">
+            </div>
+
+            <div class="testimonial-text">
+                Working with you was a great experience. You always brought fresh creative ideas while staying professional and organized. Communication was smooth and collaboration was enjoyable.
+
+                I would happily work with you again.
+            </div>
+
+            <div class="testimonial-author">Shashank Malla</div>
+            <div class="testimonial-role">DOP, Asterdio Inc.</div>
+
+        </div>
+
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card">
+
+            <div class="testimonial-avatar">
+                <img src="img/testimonials/avatar.png" alt="">
+            </div>
+
+            <div class="testimonial-text">
+                Pranju is confident, creative, and extremely collaborative. She worked seamlessly across teams and international clients while managing multiple brands and continuously improving herself.
+
+                A genuinely strong teammate.
+            </div>
+
+            <div class="testimonial-author">Aayusha Poudyal</div>
+            <div class="testimonial-role">Digital Marketing Assistant, Asterdio Inc.</div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- ===== Owl Carousel Init ===== -->
+<script>
+$('.quote-slider').owlCarousel({
+    loop:true,
+    margin:20,
+    autoplay:true,
+    autoplayTimeout:5000,
+    smartSpeed:800,
+    dots:true,
+    nav:false,
+
+    responsive:{
+        0:{items:1},
+        768:{items:2},
+        1200:{items:3}
+    }
+});
+</script>
+
+</section>
+<!-- ================= End Testimonials ================= -->
+
+            
 
         <!-- Portfolio -->
         <section id="works" class="pt100 pb110">
@@ -598,14 +775,14 @@
                             </div>
                             <!-- Portfolio Item -->
                             <div class="col-md-4 col-sm-6" data-filter="Designs">
-                                <a href="stickers-design.html">
+                                <a href="office-campaigns.html">
                                     <div class="portfolio-item">
                                         <div class="item-caption">
-                                            <h4>Sticker Designs</h4>
-                                            <p>Designs</p>
+                                            <h4>Corporate Culture</h4>
+                                            <p>Marketing & Campaigns</p>
                                         </div>
                                         <div class="item-image">
-                                            <img alt="#" src="img/portfolio/s1.png" />
+                                            <img alt="#" src="img/portfolio/mockup_01.png" />
                                         </div>
                                     </div>
                                 </a>
@@ -640,14 +817,14 @@
                             </div>
                             <!-- Portfolio Item -->
                             <div class="col-md-4 col-sm-6" data-filter="Marketing Designs">
-                                <a href="restaurant-poster.html">
+                                <a href="social-media-reels.html">
                                     <div class="portfolio-item">
                                         <div class="item-caption">
-                                            <h4>Restaurant Banner Design</h4>
-                                            <p>Marketing &amp; Designs</p>
+                                            <h4>Social Media Reels</h4>
+                                            <p>Marketing &amp; Production</p>
                                         </div>
                                         <div class="item-image">
-                                            <img alt="product" src="img/portfolio/stand.png"/>
+                                            <img alt="product" src="img/portfolio/mockup_01.png"/>
                                         </div>
                                     </div>
                                 </a>
